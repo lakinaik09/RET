@@ -7,9 +7,6 @@ body{
 html{
     scroll-behavior: smooth;
 }
-a.active{
-    color: orange;
-}
 
 .hero-section{
     background: linear-gradient( to right,rgba(125, 58, 187, 0.808) 50% ,rgba(37, 7, 143, 0.863)),url('./assets/hex-textured-background-networking.jpg');

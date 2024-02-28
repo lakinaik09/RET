@@ -3,6 +3,10 @@ import { Link } from "react-scroll";
 import logo from "../assets/RET_logo.png";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
+import fbLogo from "../assets/facebook.png";
+import instaLogo from "../assets/instagram.png";
+import twitterLogo from "../assets/twitter.png";
+import pinLogo from "../assets/pinterest.png";
 
 
 import "../App.css";
@@ -111,7 +115,7 @@ const Navbar = () => {
           </li>
         </ul>
         <button
-          class={`hamburger ${mobileNav ? "is-active" : ""} md:hidden`}
+          className={`hamburger ${mobileNav ? "is-active" : ""} md:hidden`}
           onClick={handleSidebar}
         >
             
@@ -125,7 +129,15 @@ const Navbar = () => {
       </nav>
         {/* ========Mobile Nav======= */}
       <div className={`w-full h-screen bg-[#000000bb] fixed ${mobileNav?'left-0':'-left-full'} duration-300 transition-all z-[99]`}>
-          <ul className="bg-white h-screen relative inline-flex flex-col w-auto md:items-center md:gap-10 gap-5 text-lg pt-20 px-10">
+     
+          <div className="bg-blue-950 text-white h-screen relative inline-flex flex-col w-auto md:items-center md:gap-10 px-6 text-lg border-white">
+          <div>
+          <Link spy={true} smooth={true} offset={0} duration={500} to={"home"}>
+            <img src={logo} alt="" className="md:w-32 w-32 cursor-pointer py-6" />
+          </Link>
+        </div>
+            <ul className="flex flex-col gap-6 py-6 border-t border-b border-slate-500">
+
             <li>
               <Link
                 activeClass="active"
@@ -196,7 +208,25 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
-          </ul>
+            </ul>
+<div className="mt-6">
+              <p className="mb-2">Follow us:</p> 
+            <div className="icons flex gap-3">
+              <Link className="hover:-translate-y-2 duration-300">
+                <img src={fbLogo} alt="facebook icon" className="w-6"/>
+              </Link>
+              <Link className="hover:-translate-y-2 duration-300">
+                <img src={instaLogo} alt="instagram icon" className="w-6"/>
+              </Link>
+              <Link className="hover:-translate-y-2 duration-300">
+                <img src={twitterLogo} alt="twitter icon" className="w-6"/>
+              </Link>
+              <Link className="hover:-translate-y-2 duration-300">
+                <img src={pinLogo} alt="pintrest icon" className="w-6"/>
+              </Link>
+            </div>
+            </div>
+          </div>
         </div>
     </>
   );

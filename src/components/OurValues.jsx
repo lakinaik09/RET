@@ -78,7 +78,7 @@ const OurValues = () => {
             </p>
           </div>
         </div>
-        <div id="our-value" className="md:py-10">
+        <div id="our-value" className="md:py-10 mt-5">
           <h3 className="md:text-3xl text-2xl font-semibold text-center text-slate-700 md:mt-6 md:mb-4">
             Our values
           </h3>
