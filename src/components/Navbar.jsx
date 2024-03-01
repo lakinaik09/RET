@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import fbLogo from "../assets/facebook.png";
 import instaLogo from "../assets/instagram.png";
 import twitterLogo from "../assets/twitter.png";
-import pinLogo from "../assets/pinterest.png";
+import LinkedInLogo from "../assets/linkedin.png";
 
 
 import "../App.css";
@@ -84,7 +84,7 @@ const Navbar = () => {
               to="our-value"
               className="cursor-pointer"
             >
-              Our Value
+              Our Values
             </Link>
           </li>
           <li>
@@ -177,7 +177,7 @@ const Navbar = () => {
                 className="cursor-pointer"
                 onClick={handleSidebar}
               >
-                Our Value
+                Our Values
               </Link>
             </li>
             <li>
@@ -222,7 +222,7 @@ const Navbar = () => {
                 <img src={twitterLogo} alt="twitter icon" className="w-6"/>
               </Link>
               <Link className="hover:-translate-y-2 duration-300">
-                <img src={pinLogo} alt="pintrest icon" className="w-6"/>
+                <img src={LinkedInLogo} alt="pintrest icon" className="w-6"/>
               </Link>
             </div>
             </div>

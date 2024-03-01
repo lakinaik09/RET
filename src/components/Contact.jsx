@@ -9,10 +9,10 @@ const Contact = () => {
   return (
     <>
       <div
-        className="contact-us-wrapper md:px-16 md:py-28 py-10 px-6 bg-slate-100 md:mt-20"
+        className="contact-us-wrapper md:px-16 md:py-28 py-8 px-6 bg-slate-100 md:mt-20"
         id="contact-us"
       >
-        <h1 className="text-3xl font-semibold text-slate-800 text-center mb-10">
+        <h1 className="text-3xl font-bold text-slate-800 text-center mb-10 font-Krub">
           Get in touch
         </h1>
         <div className="flex items-start flex-col md:flex-row justify-center md:gap-20 gap-10">

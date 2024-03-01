@@ -8,7 +8,7 @@ const ServiceSection = () => {
   return (
    <>
     <section className="md:py-20 py-10  md:px-16 sm:px-10 px-6 bg-img text-center" id='services'>
-          <h2 className="md:text-4xl text-2xl font-bold inline-block text-white text-center mb-10">
+          <h2 className="md:text-4xl text-2xl font-bold inline-block text-white text-center mb-10 font-Krub">
             Our Services
           </h2>
           <div className="grid md:grid-cols-2 text-center gap-10">

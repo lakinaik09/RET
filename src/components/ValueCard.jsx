@@ -4,17 +4,14 @@ import "../App.css"
 const ValueCard = ({img, title, description}) => {
   return (
    <>
-   <div className='card-wrapper'>
-        <div className="card-content">
-            <div className="front-side flex flex-col text-center">
-                    <img src={img} alt="" className='md:w-40 w-32 mx-auto'/>
-                    <h4 className='md:text-xl font-semibold text-white mt-4'>{title}</h4>
+        <div className="bg-slate-100 rounded-sm shadow-md md:p-4 p-2 md:w-[18rem] hover:shadow-xl duration-300">
+            <div className="text-center">
+                    <img src={img} alt="" className='w-24 mx-auto'/>
+                    <h4 className='md:text-2xl font-semibold bg-gradient-to-r from-violet-700 via-orange-600 to-blue-800 inline-block text-transparent bg-clip-text my-3'>{title}</h4>
+                <p className="md:text-lg text-base">{description}</p>
             </div>
-            <div className="back-side md:p-4">
-                <p className="md:text-xl text-base">{description}</p>
-            </div>
+          
         </div>
-   </div>
    </>
   )
 }

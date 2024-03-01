@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import fbLogo from "../assets/facebook.png";
 import instaLogo from "../assets/instagram.png";
 import twitterLogo from "../assets/twitter.png";
-import pinLogo from "../assets/pinterest.png";
+import LinkedInLogo from "../assets/linkedin.png";
 
 const Footer = () => {
   return (
@@ -91,7 +91,7 @@ const Footer = () => {
                 <img src={twitterLogo} alt="twitter icon" className="w-7"/>
               </Link>
               <Link className="hover:-translate-y-2 duration-300">
-                <img src={pinLogo} alt="pintrest icon" className="w-7"/>
+                <img src={LinkedInLogo} alt="pintrest icon" className="w-7"/>
               </Link>
             </div>
           </div>
