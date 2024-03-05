@@ -9,28 +9,40 @@ const Contact = () => {
   return (
     <>
       <div
-        className="contact-us-wrapper md:px-16 md:py-28 py-8 px-6 bg-slate-100 md:mt-20"
+        className="contact-us-wrapper md:px-16 md:py-20a py-8 px-6 bg-slate-100"
         id="contact-us"
       >
         <h1 className="text-3xl font-bold text-slate-800 text-center mb-10 font-Krub">
           Get in touch
         </h1>
         <div className="flex items-start flex-col md:flex-row justify-center md:gap-20 gap-10">
-          <div className="md:w-1/2 w-full border shadow-sm rounded-md p-6 bg-white flex flex-col gap-2 text-xl">
+          <div className="md:w-1/2 w-full rounded-md flex flex-col gap-2 text-xl">
+            <div className="grid md:grid-cols-2 md:gap-14">
+            <div className="col-span-2 border shadow-sm rounded-md p-6 text-center bg-white">
             <Link>
-              {" "}
-              <IoLocationOutline className="md:text-2xl inline-block me-1" /><span> Plot no -664, Saheed Nagar, Bhubaneswar, Odisha 751007</span>
+                <p><IoLocationOutline className="md:text-2xl inline-block me-1" /></p>
+              <p className="my-3 font-semibold text-violet-900">Our Address</p>
+             <p> Plot no -664, Saheed Nagar, Bhubaneswar, Odisha 751007</p>
             </Link>
-            <Link to="mailto:support.ret@gmail.com">
-              {" "}
+            </div>
+              <div className="border shadow-sm rounded-md p-6 text-center bg-white">
               <IoMdMail className="md:text-2xl inline-block me-1" />
-              <span>support.ret@gmail.com</span>
+              <p className="my-3 font-semibold text-violet-900">Mail Us</p>
+              <Link to="mailto:support.ret@gmail.com">
+             support.ret@gmail.com
             </Link>
-            <Link to="telto:9199999999">
+              </div>
+              <div className="border shadow-sm rounded-md p-6 text-center bg-white">
+             
               <FiPhoneCall className="md:text-2xl inline-block me-1" />
+              <p className="my-3 font-semibold text-violet-900">Call Us</p>
+              <Link to="telto:9199999999">
               <span>+91 9999 999 999</span>
-
             </Link>
+              </div>
+            </div>
+         
+           
           </div>
           <div className="md:w-1/2 w-full border shadow-sm rounded-md p-6 bg-white">
             <form className="grid md:grid-cols-2 grid-cols-1 gap-6">

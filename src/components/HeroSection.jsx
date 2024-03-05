@@ -1,5 +1,5 @@
 import React from "react";
-import heroBg from "../assets/hero-icon.png";
+import heroBg from "../assets/hero.img.png"
 
 const HeroSection = () => {
   return (
@@ -8,8 +8,8 @@ const HeroSection = () => {
       id="home"
     >
       <div className="md:w-1/2 w-full text-white z-10">
-        <h1 className="md:text-5xl text-xl font-bold">
-          Revolutionize Your Business: <br />
+        <h1 className="md:text-3xl text-xl font-bold">
+          Revolutionize Your Business:
           Unleash Growth with Next-Gen CRM Solutions
         </h1>
         <p className="md:mt-5 mt-2 md:text-xl">
@@ -22,7 +22,7 @@ const HeroSection = () => {
           <CreateAccountBtn text={"Request a demo"} />
         </div> */}
       </div>
-      <div className="img-icons md:block  md:relative md:w-1/2 z-0 w-full md:h-60 mx-auto text-center">
+      <div className="img-icons md:block  md:relative -top-20 md:w-1/2 z-0 w-full md:h-60 mx-auto text-center">
         <img
           src={heroBg}
           alt="hero-icons"

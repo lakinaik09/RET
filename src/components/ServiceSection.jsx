@@ -12,7 +12,7 @@ const ServiceSection = () => {
             Our Services
           </h2>
           <div className="grid md:grid-cols-2 text-center gap-10">
-            <div className="md:p-6 p-4 bg-white rounded-md">
+            <div className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
               <img src={Boost} alt="efficient boost" className="w-16 mx-auto" />
               <h4 className="md:text-2xl text-xl text-slate-900 font-semibold md:my-5 my-3 bg-gradient-to-r from-violet-700 via-orange-600 to-blue-800 inline-block text-transparent bg-clip-text">
                 Salesforce Implementation and Integration
@@ -25,7 +25,7 @@ const ServiceSection = () => {
                 enabling streamlined processes and enhanced productivity.
               </p>
             </div>
-            <div className="md:p-6 p-4 bg-white rounded-md">
+            <div className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
               <img
                 src={Insight}
                 alt="efficient boost"
@@ -42,7 +42,7 @@ const ServiceSection = () => {
                 that are truly aligned with your organization's goals.
               </p>
             </div>
-            <div className="md:p-6 p-4 bg-white rounded-md">
+            <div className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
               <img
                 src={SocialCare}
                 alt="efficient boost"
@@ -61,7 +61,7 @@ const ServiceSection = () => {
                 ongoing assistance whenever you need it.
               </p>
             </div>
-            <div className="md:p-6 p-4 bg-white rounded-md">
+            <div className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
               <img
                 src={DataMigration}
                 alt="efficient boost"

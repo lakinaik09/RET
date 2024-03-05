@@ -12,7 +12,7 @@ const OurValues = () => {
     {
       title: "Employee First",
       description:
-        "Adopting an 'employee first' approach, we at RET aim to create a positive workplace culture that attracts and retains top talent, leading to long-term success and sustainability.",
+        "Aim to create a positive workplace culture that attracts and retains top talent, leading to long-term success and sustainability.",
         image: EmployeeImg
     },
     {
@@ -79,7 +79,7 @@ const OurValues = () => {
           </div>
         </div>
         <div id="our-value" className="md:py-10 mt-5 ">
-          <h3 className="md:text-3xl text-2xl font-bold font-Krub text-center text-slate-700 md:mt-6 md:mb-4 font-Krub">
+          <h3 className="md:text-3xl text-2xl font-bold text-center text-slate-700 md:mt-6 md:mb-4 font-Krub">
             Our Values
           </h3>
 

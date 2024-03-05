@@ -33,7 +33,7 @@ html{
 .second-section,
 .our-value-section,
 .contact-us-wrapper{
-    background: linear-gradient( to right,rgba(255, 255, 255, 0.897) 50% ,rgba(214, 214, 214, 0.925)),url('./assets/white-bg.jpg');
+    background: linear-gradient(rgba(235, 232, 232, 0.897) 50% ,rgba(230, 223, 223, 0.925)),url('./assets/white-bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

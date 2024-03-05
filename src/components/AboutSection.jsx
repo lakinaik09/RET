@@ -4,6 +4,7 @@ import SolutionImg from "../assets/solution.png";
 import ScalingImg from "../assets/scaling.png";
 import InterfaceImg from "../assets/login.png";
 import SecurityImg from "../assets/encrypted.png";
+import aboutImg from "../assets/about-img.png"
 
 const AboutSection = () => {
   return (
@@ -20,9 +21,9 @@ const AboutSection = () => {
             A Firm with a DNA in Salesforce & CRM Consulting Services{" "}
           </h2>
           <p className=" text-slate-600 md:text-lg md:mb-2">
-            If you are looking to maximize the most Value from your Salesforce
-            Investment, you are at the right place. With the right Guidance,
-            Experience, and Expertise. RET is committed to work with its clients
+            If you are looking to maximize the most value from your Salesforce
+            Investment, you are at the right place. With the right guidance,
+            experience, and expertise. RET is committed to work with its clients
             as a trusted partner and drive them towards success.
           </p>
         </div>
@@ -32,20 +33,16 @@ const AboutSection = () => {
             <h2 className="md:text-3xl text-xl font-bold text-slate-700 md:pb-4 my-2 font-Krub">
               Who We Are
             </h2>
+            <div>
+              <img src={aboutImg} alt="about image" className="w"/>
+            </div>
             <p className="mb-3 text-slate-700 text-sm md:text-lg">
               A consulting firm focussed at helping its clients realize the full
               potential of its CRM Investments. With our Unique Consulting and
               Domain Led understanding we help our clients to better connect
               with their customers, partners, and potential customers.
             </p>
-            <p className="text-slate-700 text-sm md:text-lg">
-              Salesforce Celebrated its 25th Anniversary in February 2024, and
-              it has been a wild and rapid Growth for them but at the same time
-              what this Rapid Growth Means is that there is a Chronic Shortage
-              of Skilled Salesforce Professionals in the Market. A latest report
-              by IDC shows how Salesforce Economy Employment is doubling in
-              2026.
-            </p>
+          
           </div>
           <div className="grid md:grid-cols-2 gap-4">
 
