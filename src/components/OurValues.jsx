@@ -6,6 +6,7 @@ import Quality from "../assets/quality.png";
 import Transparency from "../assets/transparency.png";
 import Innovation from "../assets/innovation.png";
 import ValueCard from "./ValueCard";
+import WhyChooseUs from "./WhyChooseUs";
 
 const OurValues = () => {
   const companyValues = [
@@ -43,8 +44,8 @@ const OurValues = () => {
 
   return (
     <>
-      <div className="our-values-wrapper min-h-screen mb-10 pt-10">
-        <div className="salesforce-content min-h-[90vh] flex items-center md:px-16 p-6">
+      <div className="our-values-wrapper py-10 pt-10 bg-slate-100">
+        <div className="salesforce-content flex items-center md:mb-14 mb-4 md:px-16 p-6">
           <div className="md:w-3/4">
             <h1 className="md:text-6xl text-2xl font-semibold mb-4 bg-gradient-to-r from-violet-700 via-white to-orange-600 inline-block text-transparent bg-clip-text">
               The Salesforce Demand Skills Gap is Real!
@@ -78,6 +79,7 @@ const OurValues = () => {
             </p>
           </div>
         </div>
+        <WhyChooseUs/>
         <div id="our-value" className="md:py-10 mt-5 ">
           <h3 className="md:text-3xl text-2xl font-bold text-center text-slate-700 md:mt-6 md:mb-4 font-Krub">
             Our Values
@@ -91,7 +93,7 @@ const OurValues = () => {
               form the core pillars of our Firm.
             </p>
 
-            <div className="flex flex-wrap justify-center text-center md:gap-10 gap-3 md:my-14 my-6">
+            <div className="flex flex-wrap justify-center text-center md:gap-10 gap-6 md:my-14">
               {companyValues.map((value, index) => {
                 return (
                   <ValueCard

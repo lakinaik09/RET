@@ -17,8 +17,8 @@ const Contact = () => {
         </h1>
         <div className="flex items-start flex-col md:flex-row justify-center md:gap-20 gap-10">
           <div className="md:w-1/2 w-full rounded-md flex flex-col gap-2 text-xl">
-            <div className="grid md:grid-cols-2 md:gap-14">
-            <div className="col-span-2 border shadow-sm rounded-md p-6 text-center bg-white">
+            <div className="grid md:grid-cols-2 md:gap-14 gap-6">
+            <div className="md:col-span-2 border shadow-sm rounded-md p-6 text-center bg-white">
             <Link>
                 <p><IoLocationOutline className="md:text-2xl inline-block me-1" /></p>
               <p className="my-3 font-semibold text-violet-900">Our Address</p>
