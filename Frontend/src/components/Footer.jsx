@@ -66,11 +66,12 @@ const Footer = () => {
           <div>
             <h1 className="md:text-2xl text-xl border-b border-slate-400 inline-block font-semibold text-violet-100 mb-3">
               Contact & Follow
-            </h1>
+            </h1> <br />
             <p className="mb-2 text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
               <IoMdMail className="text-xl inline-block me-1" />
               <Link to="mailto:domy@gmail.com">domy@gmail.com</Link>
             </p>
+            <br />
             <p className="mb-2 text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
               <FiPhoneCall className="text-xl inline-block me-1" />
               <Link to="tel:+4733378901">+91 999 999 9999</Link>

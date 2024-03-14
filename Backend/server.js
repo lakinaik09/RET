@@ -18,7 +18,6 @@ app.post('/api/send-email', (req, res) => {
             pass: "jjopsrlagwuyoctjq",
         },
     });
-
     const mailOptions = {
         from: process.env.EMAIL_USER,
         to: email,

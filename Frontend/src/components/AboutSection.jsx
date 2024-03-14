@@ -57,7 +57,7 @@ const AboutSection = () => {
             <p className="text-slate-600 md:text-lg md:mb-2">
               With our Deep Understanding & Expertise in Salesforce Sales and
               Service Cloud we cover the entire Sales and After Sales Cycle for
-              our clients. we envision a future where our expertise expands to
+              our clients. We envision a future where our expertise expands to
               encompass every facet of Salesforce and ultimately, a diverse
               range of CRM technologies
             </p>

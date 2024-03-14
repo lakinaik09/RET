@@ -60,7 +60,7 @@ const OurValues = () => {
               its investments
             </p>
             <p className="md:text-base text-sm text-slate-300  md:mt-4 mt-2">
-              Finding the“right people,” is a huge challenge today.
+              Finding the “right people” is a huge challenge today.
             </p>
             <p className="md:text-base text-sm text-slate-300  md:mt-4 mt-2">
               This is true for a myriad of reasons, but one of the biggest
