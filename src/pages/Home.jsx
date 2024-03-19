@@ -11,6 +11,7 @@ import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import ServiceSection from "../components/ServiceSection";
 import GrowthGraphSection from "../components/GrowthGraphSection";
+import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Navbar />
       </header>
       <main>
+        <ScrollToTopBtn/>
         <HeroSection />
         <AboutSection />
         <GrowthGraphSection/> 
