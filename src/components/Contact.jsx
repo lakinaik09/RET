@@ -48,7 +48,7 @@ const Contact = () => {
         <h1 className="text-3xl font-bold text-slate-800 text-center mb-10 font-Krub">
           Get in touch
         </h1>
-        <div className="flex items-start flex-col md:flex-row justify-center md:gap-20 gap-10">
+        <div className="flex items-start flex-col md:flex-row justify-center md:gap-20 gap-10 overflow-hidden">
           <div className="md:w-1/2 w-full rounded-md flex flex-col gap-2 text-xl">
             <div className="grid md:grid-cols-2 md:gap-10 gap-6">
               <motion.div 
