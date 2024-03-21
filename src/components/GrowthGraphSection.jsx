@@ -10,12 +10,7 @@ const GrowthGraphSection = () => {
             <h2 className="md:text-3xl text-xl font-semibold text-slate-700">How Salesforces Drives Job Growth</h2>
             <p className='mt-2 text-slate-700'>{`(Number of worldwide jobs generated from the use of Salesforce)`}</p>
               <p className="text-slate-700 text-sm md:text-lg mt-4">
-              Salesforce Celebrated its 25th Anniversary in February 2024, and
-              it has been a wild and rapid Growth for them but at the same time
-              what this Rapid Growth Means is that there is a Chronic Shortage
-              of Skilled Salesforce Professionals in the Market. A latest report
-              by IDC shows how Salesforce Economy Employment is doubling in
-              2026.
+              Salesforce celebrated its 25th Anniversary in February 2024, marking a period of wild and rapid growth for the company. However, this rapid growth also signifies a chronic shortage of skilled Salesforce professionals in the market. The latest report by IDC shows that employment within the Salesforce economy is expected to double by 2026.s
             </p>
         </div>
         <div className='mt-10'>

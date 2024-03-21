@@ -52,30 +52,16 @@ const OurValues = () => {
             </h1>
 
             <p className="md:text-base text-sm text-slate-300 md:mt-4 mt-2">
-              With Salesforce Revenue Clocking at USD 31.35 Billion, there are a
-              lot of companies investing in Salesforce and similar SaaS
-              software, and software requires the right people who know how to
-              design, develop, architect, implement, test, manage, support, and
-              build to ensure success of a company and realize full potential of
-              its investments
+            With Salesforce revenue clocking at USD 31.35 billion, numerous companies are investing in Salesforce and similar SaaS software. However, software requires the right people who know how to design, develop, architect, implement, test, manage, support, and build to ensure the success of a company and realize the full potential of its investments.
             </p>
             <p className="md:text-base text-sm text-slate-300  md:mt-4 mt-2">
               Finding the “right people” is a huge challenge today.
             </p>
             <p className="md:text-base text-sm text-slate-300  md:mt-4 mt-2">
-              This is true for a myriad of reasons, but one of the biggest
-              roadblocks comes down to this: Salesforce is a complex,
-              multi-faceted solution—spanning multiple business areas and
-              serving multiple purposes. As a result, successfully managing
-              Salesforce requires a variety of specialized skillsets—making it
-              difficult to find talent that can successfully fill and execute
-              these niche roles.
+            This is true for a myriad of reasons, but one of the biggest roadblocks comes down to this: Salesforce is a complex, multi-faceted solution—spanning multiple business areas and serving multiple purposes. As a result, successfully managing Salesforce requires a variety of specialized skill sets—making it difficult to find talent that can successfully fill and execute these niche roles.
             </p>
             <p className="md:text-base text-sm text-slate-300  md:mt-4 mt-2">
-              Keeping this in Mind, we at Round Eye Technology help to bridge
-              the Talent Gap and our key goal is to help our Clients and
-              Partners achieve their desired outcomes without having Skills as a
-              bottleneck.
+            Keeping this in mind, we at Round Eye Technology aim to bridge the talent gap. Our key goal is to help our clients and partners achieve their desired outcomes without skills acting as a bottleneck.
             </p>
           </div>
         </div>

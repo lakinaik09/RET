@@ -9,6 +9,36 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+/* a.active{
+  color: orange;
+} */
+
+.animate-bg{
+  animation: rotate 1.5s infinite ease-in-out;
+}
+@keyframes rotate {
+  0%,100%{
+   rotate: 2deg;
+  }
+  50%{
+   rotate: 0deg;
+  }
+}
+.stroke{
+  animation: move 1.5s infinite ease-in-out;
+}
+@keyframes move {
+  0%,100%{
+    top: 7px;
+    right: 3px;
+  }
+  50%{
+    top: 0px;
+    right: 0px;
+  }
+}
+
 .hero-section{
     background: linear-gradient( to right,rgba(16, 1, 104, 0.87) ,rgba(121, 51, 179, 0.863)),url('./assets/hex-textured-background-networking.jpg');
     background-position: center;

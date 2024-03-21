@@ -59,12 +59,12 @@ const HeroSection = () => {
 
         <div className="relative top-0">
           <motion.img
-            initial={{ opacity: 0, scale: 0.6 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7 }}
+            initial={{ opacity: 0, scale: 0.6, }}
+            whileInView={{ opacity: 1, scale: 1, }}
+            transition={{ duration: 0.7,  }}
             src={animated_img_1}
             alt=""
-            className=""
+            className="animate-bg"
           ></motion.img>
           <motion.img
             initial={{ opacity: 0, scale: 0.6}}
@@ -91,12 +91,12 @@ const HeroSection = () => {
             className="absolute z-20 top-0"
           ></motion.img>
           <motion.img
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: .8, delay: 1 }}
+            initial={{ opacity: 0, scale: 0.9 , }}
+            whileInView={{ opacity: 1, scale: 1, }}
+            transition={{ duration: .8, delay: 1, }}
             src={animated_img_leaf}
             alt=""
-            className="absolute -z-10 top-0"
+            className="absolute -z-10 top-0 stroke"
           ></motion.img>
           <motion.img
             initial={{ opacity: 0, scale: 0.9 }}
@@ -109,11 +109,11 @@ const HeroSection = () => {
           <motion.img
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: .8, delay: 1, repeat: Infinity }}
+            transition={{ duration: .8, delay: 1, }}
             
             src={animated_img_stroke}
             alt=""
-            className="absolute top-0 z-10 "
+            className="absolute top-0 z-10 stroke"
           ></motion.img>
         </div>
       </div>

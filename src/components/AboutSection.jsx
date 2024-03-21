@@ -1,7 +1,7 @@
 import React from "react";
 
-import aboutImg from "../assets/about-img.png"
-import {motion} from "framer-motion"
+import aboutImg from "../assets/about-img.png";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
@@ -27,87 +27,81 @@ const AboutSection = () => {
 
         <div className="md:mb-10 flex md:flex-nowrap flex-wrap gap-4">
           <motion.div
-             initial={{opacity:0,scale:.8}}
-             transition={{duration:1,}}
-              whileInView={{opacity:1,scale:1}}
-          className=" bg-slate-100 p-5">
+            initial={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            className=" bg-slate-100 p-5"
+          >
             <h2 className="md:text-3xl text-xl font-bold text-slate-700 md:pb-4 my-2 font-">
               Who We Are
             </h2>
             <div>
-              <img src={aboutImg} alt="about image" className="w"/>
+              <img src={aboutImg} alt="about image" className="w" />
             </div>
             <p className="mb-3 text-slate-700 text-sm md:text-lg">
-              A consulting firm focussed at helping its clients realize the full
-              potential of its CRM Investments. With our Unique Consulting and
-              Domain Led understanding we help our clients to better connect
-              with their customers, partners, and potential customers.
+              A consulting firm focused on helping its clients realize the full
+              potential of its CRM investments. With our unique consulting and
+              domain-led understanding, we help our clients better connect with
+              their customers, partners, and potential customers.
             </p>
-          
           </motion.div>
           <div className="grid md:grid-cols-2 gap-4">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              className="border rounded-md p-3 bg-slate-100"
+            >
+              <p className="text-slate-600 md:text-lg md:mb-2">
+                RET was established with the primary vision of helping clients
+                succeed and meeting the critical shortage of experienced and
+                well-rounded Salesforce professionals. Our vision extends beyond
+                meeting the current demands of our clients; we aspire to become
+                a pivotal player in the broader CRM technology landscape.
+              </p>
+            </motion.div>
 
-          <motion.div
-             initial={{opacity:0,scale:.8}}
-             transition={{duration:1,}}
-              whileInView={{opacity:1,scale:1}}
-          className="border rounded-md p-3 bg-slate-100">
-            <p className="text-slate-600 md:text-lg md:mb-2">
-              RET was establishedwith the primary Vision of Helping Clients
-              succeed and to meet the critical shortage of Experienced and
-              Well-Rounded Salesforce Professionals.Our vision extends beyond
-              meeting current demands of our clients and we aspire to become a
-              pivotal player in the broader CRM Technology landscape.
-            </p>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              className="border rounded-md p-3 bg-slate-100"
+            >
+              <p className="text-slate-600 md:text-lg md:mb-2">
+              With our deep understanding and expertise in Salesforce Sales and Service Cloud, we cover the entire sales and after-sales cycle for our clients. We envision a future where our expertise expands to encompass every facet of Salesforce and ultimately a diverse range of CRM technologies. 
+              </p>
+            </motion.div>
 
-          <motion.div
-             initial={{opacity:0,scale:.8}}
-             transition={{duration:1,}}
-              whileInView={{opacity:1,scale:1}}
-          className="border rounded-md p-3 bg-slate-100">
-            <p className="text-slate-600 md:text-lg md:mb-2">
-              With our Deep Understanding & Expertise in Salesforce Sales and
-              Service Cloud we cover the entire Sales and After Sales Cycle for
-              our clients. We envision a future where our expertise expands to
-              encompass every facet of Salesforce and ultimately, a diverse
-              range of CRM technologies
-            </p>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              className="border rounded-md p-3 bg-slate-100"
+            >
+              <p className="text-slate-600 md:text-lg md:mb-2">
+              Our strength lies in our experienced team, boasting extensive knowledge in Salesforce solutions and management. We are committed to nurturing a culture of learning and excellence, continually seeking eager, young professionals to join our journey toward innovation and success.
+              </p>
+            </motion.div>
 
-          <motion.div
-             initial={{opacity:0,scale:.8}}
-             transition={{duration:1,}}
-              whileInView={{opacity:1,scale:1}}
-          className="border rounded-md p-3 bg-slate-100">
-            <p className="text-slate-600 md:text-lg md:mb-2">
-              Our strength lies in our experienced team, boasting extensive
-              knowledge in Salesforce solutioning, and management. We're
-              committed to nurturing a culture of learning and excellence,
-              continually seeking eager, young professionals to join our journey
-              towards innovation and success.
-            </p>
-          </motion.div>
-
-          <motion.div
-             initial={{opacity:0,scale:.8}}
-             transition={{duration:1,}}
-              whileInView={{opacity:1,scale:1}}
-          className="border rounded-md p-3 bg-slate-100">
-            <p className="text-slate-600 md:text-lg md:mb-2">
-              What truly distinguishes Round Eyes Technology is our well-rounded
-              team of experts and our constant hunger to learn and grow. With
-              experience spanning various crucial domains and verticals, we are
-              uniquely positioned to offer comprehensive and insightful
-              solutions in the Salesforce and CRM technology sphere.
-            </p>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              className="border rounded-md p-3 bg-slate-100"
+            >
+              <p className="text-slate-600 md:text-lg md:mb-2">
+                What truly distinguishes Round Eyes Technology is our
+                well-rounded team of experts and our constant hunger to learn
+                and grow. With experience spanning various crucial domains and
+                verticals, we are uniquely positioned to offer comprehensive and
+                insightful solutions in the Salesforce and CRM technology
+                sphere.
+              </p>
+            </motion.div>
           </div>
-
         </div>
 
-    <hr />
-      
+        <hr />
       </div>
 
       {/* <section className="max-w-2xl mx-auto text-center md:mt-14 mt-4">

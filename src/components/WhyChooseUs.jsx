@@ -42,8 +42,7 @@ const WhyChooseUs = () => {
             Scalability
           </h4>
           <p className="text-slate-700 md:text-lg">
-            Whether you're a small startup or a large enterprise, our CRM
-            solutions are scalable to accommodate your growth. From managin
+          Whether you're a budding start-up or an established enterprise, our scalable CRM solutions adapt seamlessly to your expansion journey. Let's manage your growth together!
           </p>
         </motion.div>
 

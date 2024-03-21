@@ -44,11 +44,7 @@ const ServiceSection = () => {
                 Customization and Configuration
               </h4>
               <p className="font-medium text-slate-800 text-sm md:text-base">
-                Tailoring Salesforce to meet your unique business needs is our
-                specialty. Our team works closely with you to understand your
-                requirements and customize Salesforce to optimize workflows,
-                data management, reporting, and more. Experience CRM solutions
-                that are truly aligned with your organization's goals.
+              Tailoring Salesforce to meet your unique business needs is our specialty. Our team works closely with you to understand your requirements and customize Salesforce to optimize workflows, data management, reporting, and more. Experience CRM solutions that are truly aligned with your organization's goals.
               </p>
             </motion.div>
             <motion.div  
