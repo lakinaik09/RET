@@ -32,7 +32,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             className=" bg-slate-100 p-5"
           >
-            <h2 className="md:text-3xl text-xl font-bold text-slate-700 md:pb-4 my-2 font-">
+            <h2 className="md:text-3xl text-xl font-bold text-slate-700 md:pb-4 my-2">
               Who We Are
             </h2>
             <div>

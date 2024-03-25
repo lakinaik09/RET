@@ -22,7 +22,8 @@ const Navbar = () => {
     }
   };
 
-  const handleSidebar = () =>{
+  const handleSidebar = (e) =>{
+    e.stopPropagation();
     setMobileNav(!mobileNav)
   }
 

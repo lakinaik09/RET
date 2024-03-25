@@ -8,13 +8,22 @@ import { CgCloseO } from "react-icons/cg";
 
 import emailjs from "@emailjs/browser";
 
+import ReCAPTCHA from "react-google-recaptcha";
+
 import { motion } from "framer-motion";
 
 const Contact = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [verified, setVerified] = useState(false);
 
   const form = useRef();
+
+  function onChange(value) {
+    // console.log("Captcha value:", value);
+    value && setVerified(true);
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -34,7 +43,7 @@ const Contact = () => {
         },
         (error) => {
           setError(true);
-          // console.log("FAILED...", error.text);
+          console.log("FAILED...", error.text);
         }
       );
   };
@@ -46,55 +55,62 @@ const Contact = () => {
         id="contact-us"
       >
         <h1 className="text-3xl font-bold text-slate-800 text-center mb-10 font-Krub">
-          Get in touch
+          Get in Touch
         </h1>
         <div className="flex items-start flex-col md:flex-row justify-center md:gap-20 gap-10 overflow-hidden">
           <div className="md:w-1/2 w-full rounded-md flex flex-col gap-2 text-xl">
             <div className="grid md:grid-cols-2 md:gap-10 gap-6">
-              <motion.div 
-              initial={{y:-50,opacity:0}}
-              whileInView={{y:0,opacity:1}}
-              transition={{duration:.9}}
-               className="md:col-span-2 border shadow-sm rounded-md p-6 text-center bg-white">
+              <motion.div
+                initial={{ y: -50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.9 }}
+                className="md:col-span-2 border shadow-sm rounded-md p-6 text-center bg-white"
+              >
                 <Link>
                   <p>
-                    <IoLocationOutline className="md:text-2xl inline-block me-1" />
+                    <IoLocationOutline className="md:text-2xl text-xl inline-block me-1" />
                   </p>
-                  <p className="my-3 font-semibold text-violet-900">
+                  <p className="md:my-3 font-semibold text-violet-900">
                     Our Address
                   </p>
-                  <p> Plot no -664, Saheed Nagar, Bhubaneswar, Odisha 751007</p>
+                  <p className="text-base md:text-lg">
+                    Plot no. 753 Nimai Bhawan, Bamphi Sahi Telenga Bazar,
+                    Cuttack Odisha - 753009
+                  </p>
                 </Link>
               </motion.div>
-              <motion.div  
-              initial={{y:50,opacity:0}}
-              whileInView={{y:0,opacity:1}}
-              transition={{duration:.9}}
-               className="border shadow-sm rounded-md p-6 text-center bg-white">
+              <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.9 }}
+                className="border shadow-sm rounded-md p-6 text-center bg-white"
+              >
                 <IoMdMail className="md:text-2xl inline-block me-1" />
-                <p className="my-3 font-semibold text-violet-900">Mail Us</p>
-                <Link to="mailto:support.ret@gmail.com">
-                  support.ret@gmail.com
+                <p className="md:my-3 font-semibold text-violet-900">Mail Us</p>
+                <Link to="mailto:info@roundeyestech.com" className="text-base md:text-lg">
+                info@roundeyestech.com
                 </Link>
               </motion.div>
-              <motion.div  
-              initial={{y:50,opacity:0}}
-              whileInView={{y:0,opacity:1}}
-              transition={{duration:.9}}
-               className="border shadow-sm rounded-md p-6 text-center bg-white">
+              <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.9 }}
+                className="border shadow-sm rounded-md p-6 text-center bg-white"
+              >
                 <FiPhoneCall className="md:text-2xl inline-block me-1" />
-                <p className="my-3 font-semibold text-violet-900">Call Us</p>
-                <Link to="telto:9199999999">
-                  <span>+91 9999 999 999</span>
+                <p className="md:my-3 font-semibold text-violet-900">Call Us</p>
+                <Link to="telto:919338001104" className="text-base md:text-lg">
+                  +91 9338001104
                 </Link>
               </motion.div>
             </div>
           </div>
-          <motion.div 
-          initial={{x:60,opacity:0}}
-          whileInView={{x:0,opacity:1}}
-          transition={{duration:.9}}
-          className="md:w-1/2 w-full border shadow-sm rounded-md p-6 bg-white">
+          <motion.div
+            initial={{ x: 60, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9 }}
+            className="md:w-1/2 w-full border shadow-sm rounded-md p-6 bg-white"
+          >
             <form
               className="grid md:grid-cols-2 grid-cols-1 gap-6"
               onSubmit={sendEmail}
@@ -139,9 +155,22 @@ const Contact = () => {
                   required
                 />
               </div>
+
+              <div className="w-full col-span-2 md:col-auto">
+                <ReCAPTCHA
+                  sitekey="6LeXn6MpAAAAAI_Dyp3NPZIUJuXXJIwnOAMLLY8v"
+                  onChange={onChange}
+                  
+                />
+              </div>
               <button
                 type="submit"
-                className="bg-violet-700 text-white md:px-3 md:py-2 py-1 rounded w-full col-span-2 hover:bg-transparent hover:text-violet-700 duration-300 border-2 border-violet-700"
+                className={`${
+                  verified
+                    ? " bg-violet-700 text-white md:px-3 md:py-2 py-1 rounded w-full col-span-2 hover:bg-transparent hover:text-violet-700 duration-300 border-2 border-violet-700"
+                    : "bg-violet-400 text-white md:px-3 md:py-2 py-1 rounded w-full col-span-2 cursor-not-allowed border-2 border-violet-400"
+                }`}
+                disabled={!verified}
               >
                 Submit
               </button>

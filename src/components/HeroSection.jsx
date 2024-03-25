@@ -44,7 +44,7 @@ const HeroSection = () => {
             offset={0}
             duration={500}
             to="contact-us"
-            className="bg-orange-400 cursor-pointer border-2 border-orange-400 text-white md:px-10 px-2 md:py-3 py-1 rounded-sm hover:bg-transparent hover:text-orange-400 duration-300"
+            className="bg-violet-600 cursor-pointer border-2 border-violet-600 text-white md:px-10 px-2 md:py-3 py-1 rounded-sm hover:bg-transparent hover:text-violet-400 duration-300"
           >
             Get started
           </Link>
@@ -65,6 +65,14 @@ const HeroSection = () => {
             src={animated_img_1}
             alt=""
             className="animate-bg"
+          ></motion.img>
+          <motion.img
+            initial={{ opacity: 0, scale: 0.9 , }}
+            whileInView={{ opacity: 1, scale: 1, }}
+            transition={{ duration: .8, delay: 1, }}
+            src={animated_img_leaf}
+            alt=""
+            className="absolute z-10 top-0 stroke"
           ></motion.img>
           <motion.img
             initial={{ opacity: 0, scale: 0.6}}
@@ -90,14 +98,7 @@ const HeroSection = () => {
             alt=""
             className="absolute z-20 top-0"
           ></motion.img>
-          <motion.img
-            initial={{ opacity: 0, scale: 0.9 , }}
-            whileInView={{ opacity: 1, scale: 1, }}
-            transition={{ duration: .8, delay: 1, }}
-            src={animated_img_leaf}
-            alt=""
-            className="absolute -z-10 top-0 stroke"
-          ></motion.img>
+          
           <motion.img
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}

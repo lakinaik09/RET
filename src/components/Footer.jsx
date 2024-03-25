@@ -69,17 +69,18 @@ const Footer = () => {
             </h1> <br />
             <p className="mb-2 text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
               <IoMdMail className="text-xl inline-block me-1" />
-              <Link to="mailto:domy@gmail.com">domy@gmail.com</Link>
+              <Link to="mailto:info@roundeyestech.com">info@roundeyestech.com</Link>
             </p>
             <br />
             <p className="mb-2 text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
               <FiPhoneCall className="text-xl inline-block me-1" />
-              <Link to="tel:+4733378901">+91 999 999 9999</Link>
+              <Link to="tel:+919338001104">+91 9338001104</Link>
             </p>{" "}
             <br />
-            <p className="mb-2 text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
+            <p className="mb-2 text-slate-300 cursor-pointer inline-block">
               <IoLocationOutline className="text-xl inline-block me-1" />
-              <span>Domy adress</span>
+              <span>Plot no. 753 Nimai Bhawan, Bamphi Sahi Telenga Bazar,
+                    Cuttack Odisha - 753009</span>
             </p>
             <div className="icons flex gap-3 mt-2">
               <Link className="hover:-translate-y-2 duration-300">
@@ -98,7 +99,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="border-slate-700 text-center text-slate-400 py-4 border-t mt-7 md:mt-4 text-sm">
-          RET@2024. All rights reserved. Developed with ❤ by <Link to="https://digitaldeta.com/" target="_blank" className=" text-violet-600">Digitaldeta</Link>.
+          RET@2024. All rights reserved. Developed with ❤ by <span className=" text-violet-600">Digitaldeta</span>.
         </p>
       </footer>
     </>
