@@ -15,15 +15,13 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
-  const [verified, setVerified] = useState(false);
+  const [verified, setVerified] = useState("");
 
   const form = useRef();
 
   function onChange(value) {
-    // console.log("Captcha value:", value);
-    value && setVerified(true);
+    setVerified(value);
   }
-
   const sendEmail = (e) => {
     e.preventDefault();
 
