@@ -80,7 +80,7 @@ const Navbar = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-30}
               duration={500}
               to="our-value"
               className="cursor-pointer"
