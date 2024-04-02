@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import logo from "../assets/RET_logo.png";
+import logo from "../assets/RET_LOGO_2.png";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import fbLogo from "../assets/facebook.png";
@@ -45,7 +45,7 @@ const Navbar = () => {
       >
         <div>
           <Link spy={true} smooth={true} offset={0} duration={500} to={"home"}>
-            <img src={logo} alt="" className="md:w-32 w-28 cursor-pointer" />
+            <img src={logo} alt="" className="md:w-36 w-28 cursor-pointer" />
           </Link>
         </div>
         <ul className="md:flex hidden items-center gap-10 text-lg">

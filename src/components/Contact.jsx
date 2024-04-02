@@ -156,7 +156,7 @@ const Contact = () => {
 
               <div className="w-full col-span-2 md:col-auto">
                 <ReCAPTCHA
-                  sitekey="6LeXn6MpAAAAAI_Dyp3NPZIUJuXXJIwnOAMLLY8v"
+                  sitekey="6LdP26spAAAAAEOZc8Q_xn1nP4UMouMgCp05QN__"
                   onChange={onChange}
                   
                 />

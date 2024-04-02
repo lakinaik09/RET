@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMdMail } from "react-icons/io";
-import Logo from "../assets/RET_logo.png";
+import Logo from "../assets/RET_LOGO_2.png";
 import { FiPhoneCall } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <div>
               <img src={Logo} alt="logo" className="md:w-32 w-24 md:mb-2 mb-1" />
-              <p className="p-2 md:text-base text-sm text-slate-300">
+              <p className="py-2 md:text-base text-sm text-slate-300">
                 Unlock the beauty of seamless connections with our CRM website -
                 where every click is a brushstroke, painting a masterpiece of
                 customer relationships.
@@ -29,23 +29,23 @@ const Footer = () => {
               Quick links
             </h1>
             <br />
-            <p className="text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
+            <p className="text-slate-300 duration-300 inline-block">
               Home
             </p>{" "}
             <br />
-            <p className="text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
+            <p className="text-slate-300 duration-300 inline-block">
               About us
             </p>{" "}
             <br />
-            <p className="text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
+            <p className="text-slate-300 duration-300 inline-block">
               Services
             </p>{" "}
             <br />
-            <p className="text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
+            <p className="text-slate-300 duration-300 inline-block">
               Our values
             </p>{" "}
             <br />
-            <p className="text-slate-300 cursor-pointer hover:underline hover:text-orange-400 duration-300 inline-block">
+            <p className="text-slate-300 duration-300 inline-block">
               Contact us
             </p>{" "}
             <br />

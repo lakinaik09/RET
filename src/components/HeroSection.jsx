@@ -12,7 +12,7 @@ import { Link } from "react-scroll";
 const HeroSection = () => {
   return (
     <section
-      className="hero-section md:p-16 px-10 sm:py-32 py-24 flex flex-col md:flex-row items-center md:justify-between justify-center md:gap-24 w-full md:min-h-screen"
+      className="hero-section md:p-16 px-10 sm:py-32 py-24 flex flex-col md:flex-row items-center md:justify-between justify-center md:gap-24 gap-6 w-full md:min-h-screen"
       id="home"
     >
       <div className="md:w-1/2 w-full z-10">
