@@ -44,7 +44,7 @@ const OurValues = () => {
 
   return (
     <>
-      <div className="our-values-wrapper md:mt-10 mt-4 bg-slate-100">
+      <div className="our-values-wrapper bg-slate-100 dark:bg-slate-900">
         <div className="salesforce-content flex items-center md:mb-14 mb-4 md:px-16 p-6 md:py-24">
           <div className="md:w-3/4">
             <h1 className="md:text-6xl text-2xl font-semibold mb-4 bg-gradient-to-r from-violet-700 via-white to-orange-600 inline-block text-transparent bg-clip-text">
@@ -67,12 +67,12 @@ const OurValues = () => {
         </div>
         <WhyChooseUs/>
         <div id="our-value" className="md:py-10 mt-5 ">
-          <h3 className="md:text-3xl text-2xl font-bold text-center text-slate-700 md:mt-6 md:mb-10 mb-5 font-Krub">
+          <h3 className="md:text-3xl text-2xl font-bold text-center text-slate-700 dark:text-slate-300 md:mt-6 md:mb-10 mb-5 font-Krub">
             Our Values
           </h3>
 
           <div className="md:px-14 px-6 text-center mt-4">
-            <p className="md:text-xl text-slate-900 font-semibold">
+            <p className="md:text-xl text-slate-900 dark:text-slate-300 font-semibold">
               RET is a Value Driven Company which is committed towards the
               growth and success of its Employees, Clients, and Partners. The
               Foundation of our company lays on the below key principles which

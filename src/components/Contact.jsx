@@ -45,14 +45,13 @@ const Contact = () => {
         }
       );
   };
-
   return (
     <>
       <div
         className="contact-us-wrapper md:px-16 md:py-24 py-8 px-6 bg-slate-100"
         id="contact-us"
       >
-        <h1 className="text-3xl font-bold text-slate-800 text-center mb-10 font-Krub">
+        <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-300 text-center mb-10 font-Krub">
           Get in Touch
         </h1>
         <div className="flex items-start flex-col md:flex-row justify-center md:gap-20 gap-10 overflow-hidden">
@@ -62,7 +61,7 @@ const Contact = () => {
                 initial={{ y: -50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.9 }}
-                className="md:col-span-2 border shadow-sm rounded-md p-6 text-center bg-white"
+                className="md:col-span-2 border dark:border-none shadow-sm rounded-md p-6 text-center bg-white dark:bg-slate-800 dark:text-slate-300"
               >
                 <Link>
                   <p>
@@ -72,8 +71,7 @@ const Contact = () => {
                     Our Address
                   </p>
                   <p className="text-base md:text-lg">
-                    Plot no. 753 Nimai Bhawan, Bamphi Sahi Telenga Bazar,
-                    Cuttack Odisha - 753009
+                  Plot no. 753, Nimai Bhawan, Telenga Bazar, Cuttack - 753009
                   </p>
                 </Link>
               </motion.div>
@@ -81,7 +79,7 @@ const Contact = () => {
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.9 }}
-                className="border shadow-sm rounded-md p-6 text-center bg-white"
+                className="border dark:border-none shadow-sm rounded-md p-6 text-center bg-white dark:bg-slate-800 dark:text-slate-300"
               >
                 <IoMdMail className="md:text-2xl inline-block me-1" />
                 <p className="md:my-3 font-semibold text-violet-900">Mail Us</p>
@@ -93,7 +91,7 @@ const Contact = () => {
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.9 }}
-                className="border shadow-sm rounded-md p-6 text-center bg-white"
+                className="border dark:border-none shadow-sm rounded-md p-6 text-center bg-white dark:bg-slate-800 dark:text-slate-300"
               >
                 <FiPhoneCall className="md:text-2xl inline-block me-1" />
                 <p className="md:my-3 font-semibold text-violet-900">Call Us</p>
@@ -107,7 +105,7 @@ const Contact = () => {
             initial={{ x: 60, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.9 }}
-            className="md:w-1/2 w-full border shadow-sm rounded-md p-6 bg-white"
+            className="md:w-1/2 w-full border dark:border-none shadow-sm rounded-md p-6 bg-white dark:bg-slate-800 dark:text-slate-300"
           >
             <form
               className="grid md:grid-cols-2 grid-cols-1 gap-6"
@@ -120,7 +118,7 @@ const Contact = () => {
                   name="name"
                   id="name"
                   placeholder="Your name"
-                  className="p-2 w-full border outline-violet-800"
+                  className="p-2 w-full border outline-violet-800 dark:outline-indigo-950 dark:focus:outline-none dark:border-slate-800 dark:bg-slate-700"
                   required
                 />
               </div>
@@ -130,7 +128,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   placeholder="Your email"
-                  className="p-2 w-full border outline-violet-800"
+                  className="p-2 w-full border outline-violet-800 dark:outline-indigo-950 dark:focus:outline-none dark:border-slate-800 dark:bg-slate-700"
                   required
                 />
               </div>
@@ -140,7 +138,7 @@ const Contact = () => {
                   name="subject"
                   id="subject"
                   placeholder="Your subject"
-                  className="p-2 w-full border outline-violet-800"
+                  className="p-2 w-full border outline-violet-800 dark:outline-indigo-950 dark:focus:outline-none dark:border-slate-800 dark:bg-slate-700"
                   required
                 />
               </div>
@@ -149,7 +147,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="Your message"
-                  className="p-2 w-full border outline-violet-800"
+                  className="p-2 w-full border outline-violet-800 dark:outline-indigo-950 dark:focus:outline-none dark:border-slate-800 dark:bg-slate-700"
                   required
                 />
               </div>

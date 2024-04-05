@@ -50,7 +50,6 @@ html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed !important; */
 }
 .salesforce-content{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.932) 55%, rgba(0,0,0,0)), url("./assets//saleforce.jpg");
@@ -191,4 +190,37 @@ h3 {
     width: 152px;
     background-color: red !important;
 }
+}
+
+
+
+
+
+
+
+
+
+
+/* ================Dark mode============ */
+
+body.dark .second-section,
+body.dark .our-value-section,
+body.dark .contact-us-wrapper{
+    background: linear-gradient(#0f172a 50% ,#0f172a),url('./assets/white-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body.dark .bg-img{
+  background: linear-gradient(#0f172aa9 50% ,#0f172ac2),url('./assets/business.jpg') !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.dark .hero-section{
+  background: linear-gradient(#0f172aa9 50% ,#0f172ac2),url('./assets/hex-textured-background-networking.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -9,15 +9,15 @@ const AboutSection = () => {
       className="md:px-14 sm:px-10 second-section md:py-10"
       id="about-us"
     >
-      <div className="features-wrapper mx-auto relative z-20 bg-white rounded-md border md:shadow-md mb-5 sm:px-12 p-6 py-8">
-        <h3 className="md:text-3xl text-xl font-bold text-slate-700 mb-5 border-b md:pt-10 pb-5 font-Krub ">
+      <div className="features-wrapper mx-auto relative z-20 bg-white dark:bg-slate-800 rounded-md border dark:border-none   md:shadow-md mb-5 sm:px-12 p-6 py-8">
+        <h3 className="md:text-3xl text-xl font-bold text-slate-700 dark:text-slate-300 mb-5 border-b md:pt-10 pb-5 font-Krub ">
           About Us
         </h3>
         <div className="md:mb-10">
           <h2 className="md:text-4xl text-xl font-semibold mb-4 bg-gradient-to-r from-violet-700 via-orange-600 to-blue-800 inline-block text-transparent bg-clip-text">
             A Firm with a DNA in Salesforce & CRM Consulting Services{" "}
           </h2>
-          <p className=" text-slate-600 md:text-lg md:mb-2">
+          <p className=" text-slate-600 dark:text-slate-300 md:text-lg md:mb-2">
             If you are looking to maximize the most value from your Salesforce
             Investment, you are at the right place. With the right guidance,
             experience, and expertise. RET is committed to work with its clients
@@ -30,15 +30,15 @@ const AboutSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className=" bg-slate-100 p-5"
+            className=" bg-slate-100 dark:bg-slate-700 rounded p-5"
           >
-            <h2 className="md:text-3xl text-xl font-bold text-slate-700 md:pb-4 my-2">
+            <h2 className="md:text-3xl text-xl font-bold text-slate-700 dark:text-slate-200 md:pb-4 my-2">
               Who We Are
             </h2>
             <div>
               <img src={aboutImg} alt="about image" className="w" />
             </div>
-            <p className="mb-3 text-slate-700 text-sm md:text-lg">
+            <p className="mb-3 text-slate-700 dark:text-slate-300 text-sm md:text-lg">
               A consulting firm focused on helping its clients realize the full
               potential of its CRM investments. With our unique consulting and
               domain-led understanding, we help our clients better connect with
@@ -50,9 +50,9 @@ const AboutSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              className="border rounded-md p-3 bg-slate-100"
+              className="border dark:border-slate-800 rounded-md p-3 bg-slate-100 dark:bg-slate-700"
             >
-              <p className="text-slate-600 md:text-lg md:mb-2">
+              <p className="text-slate-600 dark:text-slate-300 md:text-lg md:mb-2">
                 RET was established with the primary vision of helping clients
                 succeed and meeting the critical shortage of experienced and
                 well-rounded Salesforce professionals. Our vision extends beyond
@@ -65,9 +65,9 @@ const AboutSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              className="border rounded-md p-3 bg-slate-100"
+              className="border dark:border-slate-800 rounded-md p-3 bg-slate-100 dark:bg-slate-700"
             >
-              <p className="text-slate-600 md:text-lg md:mb-2">
+              <p className="text-slate-600 dark:text-slate-300 md:text-lg md:mb-2">
               With our deep understanding and expertise in Salesforce Sales and Service Cloud, we cover the entire sales and after-sales cycle for our clients. We envision a future where our expertise expands to encompass every facet of Salesforce and ultimately a diverse range of CRM technologies. 
               </p>
             </motion.div>
@@ -76,9 +76,9 @@ const AboutSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              className="border rounded-md p-3 bg-slate-100"
+              className="border  dark:border-slate-800 rounded-md p-3 bg-slate-100 dark:bg-slate-700"
             >
-              <p className="text-slate-600 md:text-lg md:mb-2">
+              <p className="text-slate-600 dark:text-slate-300 md:text-lg md:mb-2">
               Our strength lies in our experienced team, boasting extensive knowledge in Salesforce solutions and management. We are committed to nurturing a culture of learning and excellence, continually seeking eager, young professionals to join our journey toward innovation and success.
               </p>
             </motion.div>
@@ -87,9 +87,9 @@ const AboutSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              className="border rounded-md p-3 bg-slate-100"
+              className="border dark:border-slate-800 rounded-md p-3 bg-slate-100 dark:bg-slate-700"
             >
-              <p className="text-slate-600 md:text-lg md:mb-2">
+              <p className="text-slate-600 dark:text-slate-300 md:text-lg md:mb-2">
                 What truly distinguishes Round Eyes Technology is our
                 well-rounded team of experts and our constant hunger to learn
                 and grow. With experience spanning various crucial domains and
@@ -101,7 +101,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <hr />
       </div>
 
       {/* <section className="max-w-2xl mx-auto text-center md:mt-14 mt-4">

@@ -3,16 +3,16 @@ import { IoMdMail } from "react-icons/io";
 import Logo from "../assets/RET_LOGO_2.png";
 import { FiPhoneCall } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
 import fbLogo from "../assets/facebook.png";
 import instaLogo from "../assets/instagram.png";
 import twitterLogo from "../assets/twitter.png";
 import LinkedInLogo from "../assets/linkedin.png";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
     <>
-      <footer className="bg-blue-950 text-white md:px-16 pt-10 px-6 md:pt-10">
+      <footer className="bg-blue-950 dark:bg-gray-950 text-white md:px-16 pt-10 px-6 md:pt-10">
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-5">
           <div>
             <div>
@@ -29,25 +29,26 @@ const Footer = () => {
               Quick links
             </h1>
             <br />
-            <p className="text-slate-300 duration-300 inline-block">
+            <Link to="home" className="text-slate-300 duration-300 inline-block cursor-pointer hover:underline hover:text-orange-500">
               Home
-            </p>{" "}
+            </Link>{" "}
             <br />
-            <p className="text-slate-300 duration-300 inline-block">
+            <Link to="about-us" className="text-slate-300 duration-300 inline-block cursor-pointer hover:underline hover:text-orange-500">
               About us
-            </p>{" "}
+            </Link>{" "}
             <br />
-            <p className="text-slate-300 duration-300 inline-block">
-              Services
-            </p>{" "}
-            <br />
-            <p className="text-slate-300 duration-300 inline-block">
+            <Link to="our-value" offset={-30} className="text-slate-300 duration-300 inline-block cursor-pointer hover:underline hover:text-orange-500">
               Our values
-            </p>{" "}
+            </Link>{" "}
+            
             <br />
-            <p className="text-slate-300 duration-300 inline-block">
+            <Link   to="services"  className="text-slate-300 duration-300 inline-block cursor-pointer hover:underline hover:text-orange-500">
+              Services
+            </Link>{" "}
+            <br />
+            <Link  to="contact-us" className="text-slate-300 duration-300 inline-block cursor-pointer hover:underline hover:text-orange-500">
               Contact us
-            </p>{" "}
+            </Link>{" "}
             <br />
           </div>
           <div>
@@ -83,16 +84,16 @@ const Footer = () => {
                     Cuttack Odisha - 753009</span>
             </p>
             <div className="icons flex gap-3 mt-2">
-              <Link className="hover:-translate-y-2 duration-300">
+              <Link to="" className="hover:-translate-y-2 duration-300">
                 <img src={fbLogo} alt="facebook icon" className="w-7"/>
               </Link>
-              <Link className="hover:-translate-y-2 duration-300">
+              <Link to="" className="hover:-translate-y-2 duration-300">
                 <img src={instaLogo} alt="instagram icon" className="w-7"/>
               </Link>
-              <Link className="hover:-translate-y-2 duration-300">
+              <Link to="" className="hover:-translate-y-2 duration-300">
                 <img src={twitterLogo} alt="twitter icon" className="w-7"/>
               </Link>
-              <Link className="hover:-translate-y-2 duration-300">
+              <Link to="" className="hover:-translate-y-2 duration-300">
                 <img src={LinkedInLogo} alt="pintrest icon" className="w-7"/>
               </Link>
             </div>

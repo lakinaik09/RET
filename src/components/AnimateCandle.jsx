@@ -21,7 +21,7 @@ const AnimateCandle = () => {
           <div className="text-center font-bold text-white pt-1 w-full bg-blue-500 h-[55%]">
             2.8
           </div>
-          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 font-bold">4.6</div>
+          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 dark:text-slate-300 font-bold">4.6</div>
         </motion.div>
         <motion.div
           viewport={{ once: false }} 
@@ -37,7 +37,7 @@ const AnimateCandle = () => {
           <div className="text-white text-center font-bold pt-1 w-full bg-blue-500 h-[55%]">
             3.4
           </div>
-          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 font-bold">5.8</div>
+          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 dark:text-slate-300 font-bold">5.8</div>
         </motion.div>
         <motion.div
           viewport={{ once: false }}
@@ -53,7 +53,7 @@ const AnimateCandle = () => {
           <div className="text-center text-white font-bold pt-1 w-full bg-blue-500 h-[55%]">
             4.2
           </div>
-          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 font-bold">7.1</div>
+          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 dark:text-slate-300 font-bold">7.1</div>
         </motion.div>
         <motion.div
           viewport={{ once: false }}
@@ -69,7 +69,7 @@ const AnimateCandle = () => {
           <div className="text-center font-bold text-white pt-1 w-full bg-blue-500 h-[55%]">
             5.1
           </div>
-          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 font-bold">8.6</div>
+          <div className="absolute md:-top-10 -top-8 md:left-7 left-1 md:text-xl text-blue-950 dark:text-slate-300 font-bold">8.6</div>
         </motion.div>
         <motion.div
           viewport={{ once: false }}
@@ -85,7 +85,7 @@ const AnimateCandle = () => {
           <div className="text-center font-bold text-white pt-1 w-full bg-blue-500 h-[55%]">
             6.0
           </div>
-          <div className="absolute md:-top-10 -top-8 md:left-7 md:text-xl text-blue-950 font-bold">10.2</div>
+          <div className="absolute md:-top-10 -top-8 md:left-7 md:text-xl text-blue-950 dark:text-slate-300 font-bold">10.2</div>
         </motion.div>
         <motion.div
           viewport={{ once: false }}
@@ -101,7 +101,7 @@ const AnimateCandle = () => {
           <div className="text-center font-bold text-white pt-1 w-full bg-blue-500 h-[55%]">
             7.1
           </div>
-          <div className="absolute md:-top-10 -top-8 md:left-7 md:text-xl text-blue-950 font-bold">12.0</div>
+          <div className="absolute md:-top-10 -top-8 md:left-7 md:text-xl text-blue-950 dark:text-slate-300 font-bold">12.0</div>
         </motion.div>
         <motion.div
           viewport={{ once: false }}
@@ -117,7 +117,7 @@ const AnimateCandle = () => {
           <div className="text-center font-bold pt-1 w-full text-white bg-blue-500 h-[55%]">
             8.3
           </div>
-          <div className="absolute md:-top-10 -top-8 md:left-7 md:text-xl text-blue-950 font-bold">14.0</div>
+          <div className="absolute md:-top-10 -top-8 md:left-7 md:text-xl text-blue-950 dark:text-slate-300 font-bold">14.0</div>
         </motion.div>
       </motion.div>
       <motion.div

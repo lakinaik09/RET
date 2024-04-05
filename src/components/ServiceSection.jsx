@@ -17,12 +17,12 @@ const ServiceSection = () => {
               initial={{y:50,opacity:0}}
               whileInView={{y:0,opacity:1}}
               transition={{duration:.9}} 
-              className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
+              className="md:p-6 p-4 bg-white dark:bg-slate-800 rounded-md hover:scale-105 duration-300">
               <img src={Boost} alt="efficient boost" className="w-16 mx-auto" />
               <h4 className="md:text-2xl text-xl text-slate-900 font-semibold md:my-5 my-3 bg-gradient-to-r from-violet-700 via-orange-600 to-blue-800 inline-block text-transparent bg-clip-text">
                 Salesforce Implementation and Integration
               </h4>
-              <p className="font-medium text-slate-800 text-sm md:text-base">
+              <p className="font-medium text-slate-800 dark:text-slate-300 text-sm md:text-base">
                 Harness the full power of Salesforce with our expert
                 implementation and integration services. From initial setup to
                 seamless integration with your existing systems, we ensure that
@@ -34,7 +34,7 @@ const ServiceSection = () => {
               initial={{y:50,opacity:0}}
               whileInView={{y:0,opacity:1}}
               transition={{duration:.9}} 
-              className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
+              className="md:p-6 p-4 bg-white dark:bg-slate-800 rounded-md hover:scale-105 duration-300">
               <img
                 src={Insight}
                 alt="efficient boost"
@@ -43,7 +43,7 @@ const ServiceSection = () => {
               <h4 className="md:text-2xl text-xl text-slate-900 font-semibold md:my-5 my-3 bg-gradient-to-r from-violet-700 via-orange-600 to-blue-800 inline-block text-transparent bg-clip-text">
                 Customization and Configuration
               </h4>
-              <p className="font-medium text-slate-800 text-sm md:text-base">
+              <p className="font-medium text-slate-800 dark:text-slate-300 text-sm md:text-base">
               Tailoring Salesforce to meet your unique business needs is our specialty. Our team works closely with you to understand your requirements and customize Salesforce to optimize workflows, data management, reporting, and more. Experience CRM solutions that are truly aligned with your organization's goals.
               </p>
             </motion.div>
@@ -51,7 +51,7 @@ const ServiceSection = () => {
               initial={{y:50,opacity:0}}
               whileInView={{y:0,opacity:1}}
               transition={{duration:.9}} 
-              className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
+              className="md:p-6 p-4 bg-white dark:bg-slate-800 rounded-md hover:scale-105 duration-300">
               <img
                 src={SocialCare}
                 alt="efficient boost"
@@ -60,7 +60,7 @@ const ServiceSection = () => {
               <h4 className="md:text-2xl text-xl text-slate-900 font-semibold md:my-5 my-3 bg-gradient-to-r from-violet-700 via-orange-600 to-blue-800 inline-block text-transparent bg-clip-text">
                 Training and Support
               </h4>
-              <p className="font-medium text-slate-800 text-sm md:text-base">
+              <p className="font-medium text-slate-800 dark:text-slate-300 text-sm md:text-base">
                 Empower your team with the knowledge and skills they need to
                 make the most out of Salesforce. We offer comprehensive training
                 programs tailored to different user roles and proficiency
@@ -74,7 +74,7 @@ const ServiceSection = () => {
               initial={{y:50,opacity:0}}
               whileInView={{y:0,opacity:1}}
               transition={{duration:.9}} 
-              className="md:p-6 p-4 bg-white rounded-md hover:scale-105 duration-300">
+              className="md:p-6 p-4 bg-white dark:bg-slate-800 rounded-md hover:scale-105 duration-300">
               <img
                 src={DataMigration}
                 alt="efficient boost"
@@ -83,7 +83,7 @@ const ServiceSection = () => {
               <h4 className="md:text-2xl text-xl text-slate-900 font-semibold md:my-5 my-3 bg-gradient-to-r from-violet-700 via-orange-600 to-blue-800 inline-block text-transparent bg-clip-text">
                 Data Migration and Cleanup
               </h4>
-              <p className="font-medium text-slate-800 text-sm md:text-base">
+              <p className="font-medium text-slate-800 dark:text-slate-300 text-sm md:text-base">
                 Transitioning to Salesforce or upgrading your CRM system? Let us
                 handle the complexities of data migration and cleanup. Our
                 experts ensure seamless transfer of your valuable data while

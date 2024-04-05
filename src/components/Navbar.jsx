@@ -7,13 +7,48 @@ import fbLogo from "../assets/facebook.png";
 import instaLogo from "../assets/instagram.png";
 import twitterLogo from "../assets/twitter.png";
 import LinkedInLogo from "../assets/linkedin.png";
+import { CiDark } from "react-icons/ci";
+import { CiLight } from "react-icons/ci";
+
 
 
 import "../App.css";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
+  const [theme,setTheme] = useState(null)
 
+  const handleThemeSwitch = ()=>{
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
+
+  console.log(theme)
+
+
+  useEffect(()=>{
+    if(theme==='dark'){
+        document.getElementById("body").classList.add("dark")
+    }
+    else{
+      document.getElementById("body").classList.remove("dark")
+    }
+},[theme])
+
+
+
+
+
+  // useEffect(()=>{
+  //     if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+  //       setTheme('dark');
+  //     }
+  //     else{
+  //       setTheme('light')
+  //     }
+  // },[theme])
+
+
+ 
   const checkScrollY = () => {
     if (window.scrollY > 80) {
       setNav(true);
@@ -80,7 +115,7 @@ const Navbar = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              offset={-30}
+              offset={-10}
               duration={500}
               to="our-value"
               className="cursor-pointer"
@@ -114,7 +149,15 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
+          <li>
+            <button className="p-2 bg-white bg-opacity-35 rounded-full hover:bg-opacity-50 transition-all duration-300" onClick={handleThemeSwitch}>
+            {
+              theme === 'dark' ? <CiLight className="text-xl"/> : <CiDark className="text-xl"/>
+            }
+            </button>
+          </li>
         </ul>
+        <div className="flex items-center gap-2 md:hidden">
         <button
           className={`hamburger ${mobileNav ? "is-active" : ""} md:hidden`}
           onClick={handleSidebar}
@@ -125,6 +168,15 @@ const Navbar = () => {
          <FiMenu className="text-3xl duration-300" />
         }
         </button>
+
+        <button className="md:hidden md:p-2 p-1 bg-slate-500 bg-opacity- rounded-full hover:bg-opacity-80 transition-all duration-300" onClick={handleThemeSwitch}>
+            {
+              theme === 'dark' ? <CiLight className="text-xl"/> : <CiDark className="text-xl"/>
+            }
+            </button>
+        
+        </div>
+       
 
        
       </nav>
