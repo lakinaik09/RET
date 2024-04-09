@@ -32,9 +32,9 @@ const HeroSection = () => {
           transition={{ duration: 0.9, delay: 0.4 }}
         >
           <p className="md:mt-4 mt-2 md:text-xl text-slate-300 mb-6">
-            we specialize in personalized CRM solutions to fuel your business
-            growth. With our tailored approach and expert support, we ensure
-            you're equipped to thrive in today's fast-paced market.
+            We Specialize in Personalized CRM Solutions To Fuel Your Business
+            Growth. With Our Tailored Approach And Expert Support, We Ensure
+            You're Equipped To Thrive In Today's Fast-paced Market.
           </p>
 
           <Link
@@ -46,7 +46,7 @@ const HeroSection = () => {
             to="contact-us"
             className="bg-violet-600 cursor-pointer border-2 border-violet-600 text-white md:px-10 px-2 md:py-3 py-1 rounded-sm hover:bg-transparent hover:text-violet-400 duration-300"
           >
-            Get started
+            GET STARTED
           </Link>
         </motion.div>
       </div>
@@ -59,23 +59,23 @@ const HeroSection = () => {
 
         <div className="relative top-0">
           <motion.img
-            initial={{ opacity: 0, scale: 0.6, }}
-            whileInView={{ opacity: 1, scale: 1, }}
-            transition={{ duration: 0.7,  }}
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
             src={animated_img_1}
             alt=""
             className="animate-bg"
           ></motion.img>
           <motion.img
-            initial={{ opacity: 0, scale: 0.9 , }}
-            whileInView={{ opacity: 1, scale: 1, }}
-            transition={{ duration: .8, delay: 1, }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
             src={animated_img_leaf}
             alt=""
             className="absolute z-10 top-0 stroke"
           ></motion.img>
           <motion.img
-            initial={{ opacity: 0, scale: 0.6}}
+            initial={{ opacity: 0, scale: 0.6 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             src={animated_img_2}
@@ -85,7 +85,7 @@ const HeroSection = () => {
           <motion.img
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: .8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
             src={animated_img_3}
             alt=""
             className="absolute z-20 top-0"
@@ -93,16 +93,16 @@ const HeroSection = () => {
           <motion.img
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: .8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
             src={animated_img_4}
             alt=""
             className="absolute z-20 top-0"
           ></motion.img>
-          
+
           <motion.img
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: .8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
             src={animated_img_vas}
             alt=""
             className="absolute z-10 top-0"
@@ -110,8 +110,7 @@ const HeroSection = () => {
           <motion.img
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: .8, delay: 1, }}
-            
+            transition={{ duration: 0.8, delay: 1 }}
             src={animated_img_stroke}
             alt=""
             className="absolute top-0 z-10 stroke"

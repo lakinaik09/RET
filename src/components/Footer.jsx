@@ -80,8 +80,7 @@ const Footer = () => {
             <br />
             <p className="mb-2 text-slate-300 cursor-pointer inline-block">
               <IoLocationOutline className="text-xl inline-block me-1" />
-              <span>Plot no. 753 Nimai Bhawan, Bamphi Sahi Telenga Bazar,
-                    Cuttack Odisha - 753009</span>
+              <span> Plot no. 753, Nimai Bhawan, Telenga Bazar, Cuttack - 753009</span>
             </p>
             <div className="icons flex gap-3 mt-2">
               <Link to="" className="hover:-translate-y-2 duration-300">
