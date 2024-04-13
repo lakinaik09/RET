@@ -10,33 +10,25 @@ import LinkedInLogo from "../assets/linkedin.png";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 
-
-
 import "../App.css";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
-  const [theme,setTheme] = useState(null)
+  const [theme, setTheme] = useState(null);
 
-  const handleThemeSwitch = ()=>{
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  }
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
-  console.log(theme)
+  console.log(theme);
 
-
-  useEffect(()=>{
-    if(theme==='dark'){
-        document.getElementById("body").classList.add("dark")
+  useEffect(() => {
+    if (theme === "dark") {
+      document.getElementById("body").classList.add("dark");
+    } else {
+      document.getElementById("body").classList.remove("dark");
     }
-    else{
-      document.getElementById("body").classList.remove("dark")
-    }
-},[theme])
-
-
-
-
+  }, [theme]);
 
   // useEffect(()=>{
   //     if(window.matchMedia('(prefers-color-scheme: dark)').matches){
@@ -47,8 +39,6 @@ const Navbar = () => {
   //     }
   // },[theme])
 
-
- 
   const checkScrollY = () => {
     if (window.scrollY > 80) {
       setNav(true);
@@ -57,10 +47,10 @@ const Navbar = () => {
     }
   };
 
-  const handleSidebar = (e) =>{
+  const handleSidebar = (e) => {
     e.stopPropagation();
-    setMobileNav(!mobileNav)
-  }
+    setMobileNav(!mobileNav);
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", checkScrollY);
@@ -150,47 +140,61 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <button className="p-2 bg-white bg-opacity-35 rounded-full hover:bg-opacity-50 transition-all duration-300" onClick={handleThemeSwitch}>
-            {
-              theme === 'dark' ? <CiLight className="text-xl"/> : <CiDark className="text-xl"/>
-            }
+            <button
+              className="p-2 bg-white bg-opacity-5 rounded-full hover:bg-opacity-25 transition-all duration-300"
+              onClick={handleThemeSwitch}
+            >
+              {theme === "dark" ? (
+                <CiLight className="text-xl" />
+              ) : (
+                <CiDark className="text-xl" />
+              )}
             </button>
           </li>
         </ul>
         <div className="flex items-center gap-2 md:hidden">
-        <button
-          className={`hamburger ${mobileNav ? "is-active" : ""} md:hidden`}
-          onClick={handleSidebar}
-        >
-            
-         { mobileNav ? <AiOutlineClose className="text-3xl duration-300"/>
-         :
-         <FiMenu className="text-3xl duration-300" />
-        }
-        </button>
+          <button
+            className={`hamburger ${mobileNav ? "is-active" : ""} md:hidden`}
+            onClick={handleSidebar}
+          >
+            {mobileNav ? (
+              <AiOutlineClose className="text-3xl duration-300" />
+            ) : (
+              <FiMenu className="text-3xl duration-300" />
+            )}
+          </button>
 
-        <button className="md:hidden md:p-2 p-1 bg-slate-500 bg-opacity- rounded-full hover:bg-opacity-80 transition-all duration-300" onClick={handleThemeSwitch}>
-            {
-              theme === 'dark' ? <CiLight className="text-xl"/> : <CiDark className="text-xl"/>
-            }
-            </button>
-        
+          <button
+            className="md:hidden md:p-2 p-1 bg-slate-500 bg-opacity- rounded-full hover:bg-opacity-80 transition-all duration-300"
+            onClick={handleThemeSwitch}
+          >
+            {theme === "dark" ? (
+              <CiLight className="text-xl" />
+            ) : (
+              <CiDark className="text-xl" />
+            )}
+          </button>
         </div>
-       
-
-       
       </nav>
-        {/* ========Mobile Nav======= */}
-      <div className={`w-full h-screen bg-[#000000bb] fixed md:hidden ${mobileNav?'left-0':'-left-full'} duration-300 transition-all z-[99]`}>
-     
-          <div className="bg-blue-950 text-white h-screen relative inline-flex flex-col w-auto md:items-center md:gap-10 px-6 text-lg border-white">
+      {/* ========Mobile Nav======= */}
+      <div
+        className={`w-full h-screen bg-[#000000bb] fixed md:hidden ${
+          mobileNav ? "left-0" : "-left-full"
+        } duration-300 transition-all z-[99]`}
+      >
+        <div className="bg-blue-950 text-white h-screen relative inline-flex flex-col w-auto md:items-center md:gap-10 px-6 text-lg border-white">
           <div className="h-20">
-          <Link spy={true} smooth={true} offset={0} duration={500} to={"home"}>
-            {/* <img src={logo} alt="" className="md:w-32 w-32 cursor-pointer py-6" /> */}
-          </Link>
-        </div>
-            <ul className="flex flex-col gap-6 py-6 border-t border-b border-slate-500">
-
+            <Link
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              to={"home"}
+            >
+              {/* <img src={logo} alt="" className="md:w-32 w-32 cursor-pointer py-6" /> */}
+            </Link>
+          </div>
+          <ul className="flex flex-col gap-6 py-6 border-t border-b border-slate-500">
             <li>
               <Link
                 activeClass="active"
@@ -261,26 +265,26 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
-            </ul>
-<div className="mt-6">
-              <p className="mb-2">Follow us:</p> 
+          </ul>
+          <div className="mt-6">
+            <p className="mb-2">Follow us:</p>
             <div className="icons flex gap-3">
               <Link className="hover:-translate-y-2 duration-300" to="">
-                <img src={fbLogo} alt="facebook icon" className="w-6"/>
+                <img src={fbLogo} alt="facebook icon" className="w-6" />
               </Link>
               <Link className="hover:-translate-y-2 duration-300" to="">
-                <img src={instaLogo} alt="instagram icon" className="w-6"/>
+                <img src={instaLogo} alt="instagram icon" className="w-6" />
               </Link>
               <Link className="hover:-translate-y-2 duration-300" to="">
-                <img src={twitterLogo} alt="twitter icon" className="w-6"/>
+                <img src={twitterLogo} alt="twitter icon" className="w-6" />
               </Link>
               <Link className="hover:-translate-y-2 duration-300" to="">
-                <img src={LinkedInLogo} alt="pintrest icon" className="w-6"/>
+                <img src={LinkedInLogo} alt="pintrest icon" className="w-6" />
               </Link>
-            </div>
             </div>
           </div>
         </div>
+      </div>
     </>
   );
 };

@@ -32,9 +32,7 @@ const HeroSection = () => {
           transition={{ duration: 0.9, delay: 0.4 }}
         >
           <p className="md:mt-4 mt-2 md:text-xl text-slate-300 mb-6">
-            We Specialize in Personalized CRM Solutions To Fuel Your Business
-            Growth. With Our Tailored Approach And Expert Support, We Ensure
-            You're Equipped To Thrive In Today's Fast-paced Market.
+            We specialize in personalized CRM solutions to fuel your business growth. With our tailored approach and expert support, we ensure you're equipped to thrive in today's fast-paced market.
           </p>
 
           <Link
@@ -44,9 +42,9 @@ const HeroSection = () => {
             offset={0}
             duration={500}
             to="contact-us"
-            className="bg-violet-600 cursor-pointer border-2 border-violet-600 text-white md:px-10 px-2 md:py-3 py-1 rounded-sm hover:bg-transparent hover:text-violet-400 duration-300"
+            className="bg-violet-700 cursor-pointer border-2 border-violet-700 text-white md:px-10 px-2 md:py-3 py-1 rounded-sm hover:bg-transparent hover:text-violet-400 duration-300"
           >
-            GET STARTED
+            Get Started
           </Link>
         </motion.div>
       </div>
